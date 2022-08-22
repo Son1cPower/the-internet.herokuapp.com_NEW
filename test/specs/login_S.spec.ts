@@ -1,7 +1,14 @@
 import LoginPage_S from '../pageobjects/login_S.page'
 import Secure_S from '../pageobjects/secure_S.page'
+//import logger from '../../helpers/logger'
+
+
+
 
 describe('auth form Positive Tests', () => {
+
+//logger.level = "debug";
+//logger.debug("Some debug messages from STAS");
 
 
     it('should allow access with correct creds', async () => {

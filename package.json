@@ -42,5 +42,8 @@
     "typescript": "^4.6.4",
     "wdio-chromedriver-service": "^7.3.2",
     "webdriverio": "^7.19.7"
+  },
+  "dependencies": {
+    "log4js": "^6.6.1"
   }
 }
