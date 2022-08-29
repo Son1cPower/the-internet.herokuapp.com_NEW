@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661450594696' stop='1661450606748'>
+    <name>auth form Negative Tests</name>
+    <title>auth form Negative Tests</title>
+    <test-cases>
+        <test-case start='1661450594696' status='passed' stop='1661450595438'>
+            <name>Put incorect passwork-should not allow access, chech report error and check that password and userName fileds are clear</name>
+            <title>Put incorect passwork-should not allow access, chech report error and check that password and userName fileds are clear</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-104.0.5112.82'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661450595439' status='passed' stop='1661450596720'>
+            <name>Put incorect UserName-should not allow access, chech report error and check that password and userName fileds are clear</name>
+            <title>Put incorect UserName-should not allow access, chech report error and check that password and userName fileds are clear</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-104.0.5112.82'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661450596721' status='failed' stop='1661450606737'>
+            <name>Check text for h2, h4, name for Submit Button and fileds name for password and UserName</name>
+            <title>Check text for h2, h4, name for Submit Button and fileds name for password and UserName</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-104.0.5112.82'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Timeout - Async function did not complete within 10000ms (set by jasmine.DEFAULT_TIMEOUT_INTERVAL)</message>
+                <stack-trace>Error: Timeout - Async function did not complete within 10000ms (set by jasmine.DEFAULT_TIMEOUT_INTERVAL)
+                    at &lt;Jasmine>
+                    at listOnTimeout (node:internal/timers:559:17)
+                    at processTimers (node:internal/timers:502:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

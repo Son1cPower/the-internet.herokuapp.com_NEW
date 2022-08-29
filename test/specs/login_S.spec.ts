@@ -97,7 +97,7 @@ describe('auth form Negative Tests', () => {
         await expect(LoginPage_S.usernameLabelLoginPage).toHaveText('Username')
         await expect(LoginPage_S.passwordLabelLoginPage).toHaveText('Password')
 
-        await expect(LoginPage_S.submitButton).toHaveTextContaining('Login')
+        await expect(LoginPage_S.submitButton).toHaveTextContaining('Login2')
 
 
 

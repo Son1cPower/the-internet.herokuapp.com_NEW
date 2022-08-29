@@ -1,7 +1,11 @@
-import path from 'path'
-
- //const configObj: WebdriverIO.Config = {
-   export const config: WebdriverIO.Config = {
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.config = void 0;
+const path_1 = __importDefault(require("path"));
+exports.config = {
     //
     // ====================
     // Runner Configuration
@@ -24,7 +28,7 @@ import path from 'path'
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+    // 'path/to/excluded/files'
     ],
     //
     // ============
@@ -51,7 +55,7 @@ import path from 'path'
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'trace',
-    outputDir: path.resolve(__dirname, 'logs'),
+    outputDir: path_1.default.resolve(__dirname, 'logs'),
     //
     // Set specific log levels per logger
     // loggers:
@@ -105,10 +109,10 @@ import path from 'path'
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: ['spec', ['allure', {
-        outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-       disableWebdriverScreenshotsReporting: false,
-    }]],
+                outputDir: 'allure-results',
+                disableWebdriverStepsReporting: true,
+                disableWebdriverScreenshotsReporting: false,
+            }]],
     //
     // Options to be passed to Jasmine.
     // @ts-expect-error fixed in https://github.com/webdriverio/webdriverio/pull/6472
@@ -199,13 +203,11 @@ import path from 'path'
     /**
      * Function to be executed after a test (in Mocha/Jasmine).
      */
-     afterTest: async function(test, context, { error }) {
+    afterTest: async function (test, context, { error }) {
         if (error) {
-             await browser.takeScreenshot();
-          }
+            await browser.takeScreenshot();
+        }
     },
-
-
     /**
      * Hook that gets executed after the suite has ended
      * @param {Object} suite suite details
@@ -255,12 +257,4 @@ import path from 'path'
     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
-}
-// if (process.env.DEBUG == "1")  {
-
-// console.log(" !!!!!!!!!!!!!! DEBUG MODE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-// configObj.maxInstances =1
-// configObj.execArgv=["--inspect=127.0.0.1:5858"]
-
-// }
-// export const config = configObj
+};

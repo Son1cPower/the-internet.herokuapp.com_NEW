@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"6d0629487863b74b9896f91d3b241380","name":"auth form Negative Tests","statistic":{"failed":1,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":3}},{"uid":"567ad1beeeda47565da15081155bc858","name":"auth form Positive Tests","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
